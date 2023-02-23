@@ -1,0 +1,49 @@
+
+POST http://localhost:3003/users/signup
+Content-Type:  application/json
+
+{
+    "name": "teste",
+    "email": "teste@gmail.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:3003/users/login
+Content-Type: application/json
+
+{
+    "email": "astrodev@labenu.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:3003/posts
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODg1ZTlkLTQwNmMtNDA4Yy05ZDQzLWY3ZmFlNDNiMjE0ZiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjQxMjgwMTYsImV4cCI6MTY2NDIxNDQxNn0.JGbxtUCnqh-U2_rUt9bST96Y9TD6oZ-kdRITmBlLcs4
+
+{
+    "content": "segundo teste"
+}
+
+### 
+
+GET http://localhost:3003/posts?limit=10
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJhYzFiM2ZhLTI1MDAtNDIxNi04MzQ0LWM1ZGFjZmNjNWJjMyIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjQxNDI3NDQsImV4cCI6MTY2NDIyOTE0NH0.RICA1qAh145tuY5BUJk_NYW7cNThUMM6YKt0krhqeH8
+
+###
+
+DELETE http://localhost:3003/posts/69aa07e4-38a4-429a-884b-8fb9b2e619eb
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImU4OGI0N2UzLTQzZGItNGFlMS1iNjIwLTc0NjJiOTEzNWZmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2NDExOTQ1MCwiZXhwIjoxNjY0MjA1ODUwfQ.syp0c-ofQIHdM2ulcQU0tafctZ6W2X1QZvSry6iD8qU
+
+###
+
+POST http://localhost:3003/posts/like/6b426e97-7a03-4672-8f10-64e5367d0626
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImU4OGI0N2UzLTQzZGItNGFlMS1iNjIwLTc0NjJiOTEzNWZmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2NDExOTQ1MCwiZXhwIjoxNjY0MjA1ODUwfQ.syp0c-ofQIHdM2ulcQU0tafctZ6W2X1QZvSry6iD8qU
+
+###
+
+DELETE http://localhost:3003/posts/like/6b426e97-7a03-4672-8f10-64e5367d0626
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImU4OGI0N2UzLTQzZGItNGFlMS1iNjIwLTc0NjJiOTEzNWZmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2NDExOTQ1MCwiZXhwIjoxNjY0MjA1ODUwfQ.syp0c-ofQIHdM2ulcQU0tafctZ6W2X1QZvSry6iD8qU
